@@ -1,24 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1 class="logoSite">logo</h1>
+        <h1 class="logoSite"><a href="#">NortPages</a></h1>
+
         <nav class="itensDeNavegacao">
             <ul class="paiDosItens">
-                <li class="filhoItens">Início</li >
-                <li class="filhoItens">Funcionali dades</li >
-                <li class="filhoItens">Tecnologia s</li> 
-                <li class="filhoItens">contato</li> 
+                <li class="filhoItens"><a href="#">Início</a></li>
+                <span>|</span>
+                <li class="filhoItens"><a href="#">Projetos</a></li>
+                <span>|</span>
+                <li class="filhoItens"><a href="#">Tecnologias</a></li>
+                <span>|</span>
+                <li class="filhoItens"><a href="#">Contato</a></li>
             </ul>
         </nav>
-        <button class="buttonDeAcessso">Acessar NortPages</button>
+        <button class="btnAcesso">Acessar NortPages</button>
     </header>
-    
+    <main>
+        <section class="hero">
+            <h2>Desenvolvimento de Sites e Sistemas</h2>
+            <p>Criação profissional utilizando Laravel, Blade e Tailwind.</p>
+            <button class="btnHero">Solicitar Orçamento</button>
+        </section>
+
+        <section class="projetos fundoCard">
+
+            <h2>Projetos Recentes</h2>
+
+            <div class="cardsProjetos">
+
+                <div class="cardProjeto">
+                    <h3>📦 Sistema de Estoque</h3>
+                    <p>Aplicação completa com CRUD, login e dashboard.</p>
+                </div>
+
+                <div class="cardProjeto">
+                    <h3>🛒 Loja Virtual Moderna</h3>
+                    <p>Loja com carrinho, painel admin e checkout integrado.</p>
+                </div>
+
+                <div class="cardProjeto">
+                    <h3>📄 Gerador de Landing Pages</h3>
+                    <p>Ferramenta que cria LPs usando Blade + Tailwind.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="tecnologias fundoCard">
+
+            <h2>Tecnologias Utilizadas</h2>
+
+            <div class="cardsTec">
+
+                <div class="cardTec">
+                    <h3>Laravel</h3>
+                    <p>Framework robusto, seguro e escalável.</p>
+                </div>
+
+                <div class="cardTec">
+                    <h3>Blade</h3>
+                    <p>Template engine elegante e performática.</p>
+                </div>
+
+                <div class="cardTec">
+                    <h3>Tailwind CSS</h3>
+                    <p>Design rápido, moderno e responsivo.</p>
+                </div>
+
+                <div class="cardTec">
+                    <h3>Filas</h3>
+                    <p>Processamento assíncrono para máximo desempenho.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
 </body>
+
 </html>

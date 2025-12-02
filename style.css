@@ -7,3 +7,71 @@ body{
     font-family: "Roboto", sans-serif;
     background-color: #111827;
 }
+ul{
+    list-style: none;
+}
+header{
+    background-color: #121c35;
+    border-bottom: 2px solid #103689e9;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 20px;
+}
+.paiDosItens{
+    display: flex;
+    gap: 10px;
+}
+.paiDosItens span{
+    color: #fff;
+}
+.logoSite a{
+    color: #E2E8F0;
+}
+a{
+    text-decoration: none;
+}
+.filhoItens a{
+    color: #E2E8F0;
+}
+.filhoItens a:hover{
+    color: #2d65be;
+}
+.filhoItens{
+    position: relative;
+    transition: .5s ease-in-out;
+    
+}
+.filhoItens a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    bottom: -3px;
+    height: 1.5px;
+    background-color: #E2E8F0;
+    transition: .25s ease-in-out;
+}
+.filhoItens a:hover::after{
+    width: 100%;
+}
+.btnAcesso{
+    background-color: #0d115c;
+    color: #E2E8F0;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: .5s ease-in-out;
+}
+.btnAcesso:hover{
+    background-color: #1b1e73;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.fundoCard{
+    background-color:  #17202e;
+}
+
