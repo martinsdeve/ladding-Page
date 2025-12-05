@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
     padding: 0;
-    margin: 0;box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Roboto", sans-serif;
     background-color: #111827;
 }
-ul{
+
+ul {
     list-style: none;
 }
-header{
+
+header {
     background-color: #121c35;
     border-bottom: 2px solid #103689e9;
     display: flex;
@@ -18,31 +23,39 @@ header{
     justify-content: space-evenly;
     padding: 15px 20px;
 }
-.paiDosItens{
+
+.paiDosItens {
     display: flex;
     gap: 10px;
 }
-.paiDosItens span{
+
+.paiDosItens span {
     color: #fff;
 }
-.logoSite a{
+
+.logoSite a {
     color: #E2E8F0;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.filhoItens a{
+
+.filhoItens a {
     color: #E2E8F0;
 }
-.filhoItens a:hover{
+
+.filhoItens a:hover {
     color: #2d65be;
 }
-.filhoItens{
+
+.filhoItens {
     position: relative;
     transition: .5s ease-in-out;
-    
+
 }
-.filhoItens a::after{
+
+.filhoItens a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -52,18 +65,21 @@ a{
     background-color: #E2E8F0;
     transition: .25s ease-in-out;
 }
-.filhoItens a:hover::after{
+
+.filhoItens a:hover::after {
     width: 100%;
 }
-.btnAcesso{
+
+.btnAcesso {
     background-color: #0d115c;
     color: #E2E8F0;
     border: none;
     border-radius: 8px;
-    padding: 10px 15px;
+    padding: 12px 20px;
     transition: .5s ease-in-out;
 }
-.btnAcesso:hover{
+
+.btnAcesso:hover {
     background-color: #1b1e73;
     color: #ffffff;
     border: none;
@@ -71,7 +87,160 @@ a{
     cursor: pointer;
 }
 
-.fundoCard{
-    background-color:  #17202e;
+.fundoCard {
+    background-color: #17202e;
+    padding: 10px 20px;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.tecnologias,
+.projetos,
+.primeiroCard {
+    width: 800px;
+    max-width: 90%;
+    border-radius: 8px;
+}
+
+
+.projetos .Titulo,
+.tecnologias .Titulo {
+    color: #E2E8F0;
+}
+
+.projetos .cardProjeto,
+.tecnologias .cardTecno {
+    color: #dfe5ecd7;
+}
+
+.Titulo {
+    padding: 8px;
+}
+
+.cardProjeto {
+    background-color: #1f2c41;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+
+}
+
+.cardProjeto:hover, .Titulo{
+    background-color: #17202e;
+    color: #fff;
+}
+
+.divisorTecno {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cardTecno {
+    background-color: #1f2c41;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    width: 400px;
+    height: 85px;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+.cardTecno:hover, .Titulo {
+    background-color: #17202e;
+    color: #fff;
+}
+
+.primeiroCard {
+    background: #17202e;
+    padding: 50px;
+    text-align: center;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: #E2E8F0;
+    margin-top: 20px;
+
+}
+
+.btnPrimeiroDoCard {
+    background-color: #0d115c;
+    color: #E2E8F0;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    transition: .5s ease-in-out;
+}
+
+
+.btnPrimeiroDoCard:hover {
+    background-color: #2b394e;
+    color: #E2E8F0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.rodape {
+    height: 10vh;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.rodapeLinks {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    letter-spacing: 1.3px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.rodapeLinks li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.rodapeLinks a {
+    color: #e5e7eb;
+    text-decoration: none;
+    position: relative;
+}
+
+.rodapeLinks a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 1.5px;
+    background-color: #fff;
+    transition: .2s ease-in-out;
+}
+
+.rodapeLinks a:hover {
+    color: #2d65be;
+}
+
+.rodapeLinks a:hover::after {
+    width: 100%;
+}
+
+.conteudoRodape {
+    color: #E2E8F0;
+    padding: 10px;
+}
+
+.spanDivisorRodape{
+    color: #E2E8F0;
+}
