@@ -152,6 +152,7 @@ main {
     border-radius: 8px;
     width: 400px;
     height: 85px;
+    max-width: 90%;
     cursor: pointer;
     transition: .25s ease-in-out;
 }
@@ -243,4 +244,30 @@ main {
 
 .spanDivisorRodape{
     color: #E2E8F0;
+}
+
+
+@media (max-width:720px){
+    header{
+            flex-direction: column;
+    }
+    .paiDosItens{
+        margin-top: 10px;
+    }
+    .btnAcesso{
+        margin-top: 10px;
+    }
+    .cardTecno{
+        height: 100px;
+    }
+}
+@media (max-width:550px){
+.cardTecno{
+        height: 120px;
+        width: 300px;
+        padding: 8px;
+    }
+    h3,p{
+        font-size: 15px;
+    }
 }
