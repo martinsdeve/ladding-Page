@@ -104,7 +104,7 @@ main {
 .projetos,
 .primeiroCard {
     width: 800px;
-    max-width: 90%;
+    max-width: 95%;
     border-radius: 8px;
 }
 
@@ -133,31 +133,32 @@ main {
 
 }
 
-.cardProjeto:hover, .Titulo{
+.cardProjeto:hover,
+.Titulo {
     background-color: #17202e;
     color: #fff;
 }
 
-.divisorTecno {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.cardsTecno {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .cardTecno {
+    margin-left: 6px;
     background-color: #1f2c41;
     border-radius: 8px;
     margin-bottom: 10px;
     padding: 15px 30px;
     border-radius: 8px;
-    width: 400px;
     height: 85px;
-    max-width: 90%;
+    max-width: 98%;
     cursor: pointer;
     transition: .25s ease-in-out;
 }
 
-.cardTecno:hover, .Titulo {
+.cardTecno:hover,
+.Titulo {
     background-color: #17202e;
     color: #fff;
 }
@@ -242,32 +243,30 @@ main {
     padding: 10px;
 }
 
-.spanDivisorRodape{
+.spanDivisorRodape {
     color: #E2E8F0;
 }
 
 
-@media (max-width:720px){
-    header{
-            flex-direction: column;
+@media (max-width:895px) {
+    header {
+        flex-direction: column;
     }
-    .paiDosItens{
+
+    .paiDosItens {
         margin-top: 10px;
     }
-    .btnAcesso{
+
+    .btnAcesso {
         margin-top: 10px;
     }
-    .cardTecno{
+
+    .cardTecno {
         height: 100px;
+        width: 100%;
     }
-}
-@media (max-width:550px){
-.cardTecno{
-        height: 120px;
-        width: 300px;
-        padding: 8px;
-    }
-    h3,p{
-        font-size: 15px;
+
+    .cardsTecno {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
 }
